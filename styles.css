@@ -223,11 +223,3 @@ input::placeholder, textarea::placeholder {
     transform: scale(1.1);
 }
 
-footer {
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust background color */
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  font-family: "Press Start 2P", monospace; /* Match the font style */
-}
-
