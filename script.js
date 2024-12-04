@@ -39,6 +39,16 @@ musicToggle.addEventListener("click", () => {
   }
 });
 
+// Get the audio element and volume control slider
+const audio = document.getElementById('background-music');
+const volumeControl = document.getElementById('volume-control');
+
+// Set up an event listener to change the volume when the slider is adjusted
+volumeControl.addEventListener('input', function() {
+    audio.volume = volumeControl.value; // Set the volume to the slider value
+});
+
+
 // Popup window logic (example setup)
 function openPopup(windowId) {
   document.querySelectorAll(".popup-window").forEach((popup) => {
