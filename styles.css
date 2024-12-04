@@ -135,6 +135,7 @@ body {
     padding: 15px;
     background-color: rgba(28, 50, 91, 0.8);
     color: rgba(212, 235, 248);
+    line-height: 10px;
 }
 
 #music-controls {
@@ -142,6 +143,11 @@ body {
     top: 20px;
     right: 20px;
     z-index: 100;
+}
+
+#volume-control {
+    width: 100px; 
+    margin-top: 10px; 
 }
 
 #music-toggle {
