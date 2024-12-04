@@ -3,7 +3,6 @@ document.getElementById("start-button").addEventListener("click", function () {
     document.getElementById("portfolio").style.display = "flex";
 });
 
-
 function openPopup(windowId) {
     document.querySelectorAll(".popup-window").forEach((popup) => {
         popup.style.display = "none";
@@ -17,6 +16,7 @@ const portfolioSection = document.getElementById("portfolio");
 const musicControls = document.getElementById("music-controls");
 const musicToggle = document.getElementById("music-toggle");
 const backgroundMusic = document.getElementById("background-music");
+const volumeControl = document.getElementById("volume-control");
 
 // Handle Start Button click
 startButton.addEventListener("click", () => {
@@ -39,15 +39,13 @@ musicToggle.addEventListener("click", () => {
   }
 });
 
-// Get the audio element and volume control slider
-const audio = document.getElementById('background-music');
-const volumeControl = document.getElementById('volume-control');
+// Initialize audio volume when the page loads
+backgroundMusic.volume = 1; // Set the initial volume to max (1)
 
 // Set up an event listener to change the volume when the slider is adjusted
 volumeControl.addEventListener('input', function() {
-    audio.volume = volumeControl.value; // Set the volume to the slider value
+    backgroundMusic.volume = volumeControl.value; // Set the volume to the slider value
 });
-
 
 // Popup window logic (example setup)
 function openPopup(windowId) {
@@ -61,13 +59,9 @@ function openPopup(windowId) {
 }
 
 document.getElementById("start-button").addEventListener("click", function () {
-    
     document.getElementById("welcome").style.display = "none";
-
-    
     document.getElementById("portfolio").style.display = "flex";
 
-    
     const contactSection = document.getElementById("contact-section");
     contactSection.style.left = "20%"; 
 });
