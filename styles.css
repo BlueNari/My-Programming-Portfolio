@@ -1,7 +1,6 @@
 /* B A C K G R O U N D */
 body {
     font-family: "Press Start 2P", monospace;
-    background-image: url("assets/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
